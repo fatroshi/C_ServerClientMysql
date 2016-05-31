@@ -24,6 +24,20 @@
 	gcc myClient.c -o myClient `pkg-config --cflags --libs gtk+-2.0` && ./myClient localhost 5000
 	
 
+Result:
+0. All data is read by ReadFile and stored in a database.
+1. client sends a query to the server
+2. The server sends over the query result to the client.
+	But the result is shown in the termianl. Im sorry to say that I dont have the time to display the data in the GUI.
+	I have spend almost 3 days on this code, the main fokus has been on following files:
+		- readFile
+		- mysqlFunctions
+		- client
+		
+	If you have any questions please contact me by email atroshi (AT) kth.se
+	
+
+
 
 
 
