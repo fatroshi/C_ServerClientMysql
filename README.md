@@ -16,11 +16,17 @@
 		
 # Compile steps
 
-1: readFile.c 
+
+1: readFile.c
+	
 	gcc readFile.c -o readFile  `mysql_config --cflags --libs` && ./readFile
+	
 2: myServer.c
+
 	gcc myServer.c -o myServer `mysql_config --cflags --libs` && ./myServer 5000
+	
 3: myClient.c
+
 	gcc myClient.c -o myClient `pkg-config --cflags --libs gtk+-2.0` && ./myClient localhost 5000
 	
 
